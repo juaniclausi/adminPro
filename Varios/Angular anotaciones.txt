@@ -21,9 +21,9 @@ ng s -o 								--> compila angular y abre el servidor local
 
 >>>>>> Componentes:
 
-- ng g c direccion -is --skipTests		--> genera componente (sin css y sin test (sin html -it))
+- ng g c direccion -is --skipTests (-m)	--> genera componente (sin css y sin test (sin html -it))
 - Importo los componentes en el app.module.ts en las "declarations" (sino lo importa automaticamente)
-
+- (-m) -m="pages/pages.module.ts"  --> Dice en que modulo se importa
 
 >>>>>> Instalar Bootstrap por medio del CLI:
 
@@ -94,8 +94,9 @@ Ej:
 
 - ng g s ruta --skipTests  --> Creo el servicio
 
-	(Sino esta el providedIn: 'root' en el injectable)
-- Importo el servicio al app.module.ts en los "providers"
+Sino esta el providedIn: 'root' en el injectable,
+importo el servicio al app.module.ts en los "providers".
+Si esta en el root, no es necesario importarlo !!!
 
 >> Consumir Servicios <<
 
