@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SettingsService } from '../../services/settings.service';
+import { SettingsService } from '../../services/settings/settings.service';
 
 @Component({
   selector: 'app-accout-settings',
@@ -13,6 +13,7 @@ export class AccoutSettingsComponent implements OnInit {
   constructor( public _ajustes: SettingsService ) { }
 
   ngOnInit() {
+    this.colocarCheck();
   }
 
   cambiarColor( tema: string, link: any ) {
@@ -35,6 +36,20 @@ export class AccoutSettingsComponent implements OnInit {
 
     link.classList.add('working');
 
+  }
+
+  colocarCheck() {
+
+    const selectores: any = document.getElementsByClassName('selector');
+
+    const tema = this._ajustes.ajustes.tema;
+
+    for (const ref of selectores) {
+      if ( ref.getAttribute('data-theme') === tema ) {
+        ref.classList.add('working');
+        break;
+      }
+    }
 
   }
 
