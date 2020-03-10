@@ -215,3 +215,24 @@ git commit –m “mensaje”   --> Agrego un mensaje en lo que subo
 git push origin master  --> Subo los cambios
 git tag –a v1.0.0 –m “Version 1 – Lista para producción”  --> Crea un tag con el nombre (-a) y el mensaje (-m)
 git push –-tags   --> Sube el tag
+
+>>>>>> Actualizacion
+npm uninstall -g angular-cli
+npm cache clean or npm cache verify (if npm > 5)
+npm install -g @angular/cli@latest
+o
+
+ng update @angular/cli
+
+>>>>>> Observables
+
+/watch?v=M4OORF_-AHQ
+
+https://www.learnrxjs.io/operators/error_handling/retrywhen.html
+
+y dejo el enlace que aplica el ejemplo
+
+https://stackblitz.com/edit/angular-cwnknr?file=app%2Frxjs-utils.ts
+
+Más sobre los diferentes operadores disponibles de RXJS
+http://reactivex.io/documentation/operators.html
